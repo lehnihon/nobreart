@@ -1,8 +1,42 @@
 #header{
-    .container{   
-        nav{ 
-        }
-    }    
+	border-top:5px solid #ffe800; 
+	background-color:#010101;
+	margin-bottom:10px;
+
+	div.back-black{
+	    div.container{   
+	        div{
+	        	margin-bottom: 10px;
+		     	div.header-logo{
+		     		text-align: left;
+		     	}  
+		     	div.header-menu{
+		     	}      	
+		     }
+
+	    }  		
+	}
+	div.back-yellow{
+		background-color:#ffe800;
+		nav.container{	
+			ul{
+				margin-bottom: 0;
+				padding-left:0;
+				li{
+					float: left;
+					list-style-type: none;
+					width: 14.2%;
+					position: relative;
+				    min-height: 1px;
+				    padding: 15px;
+				}
+				li:hover{
+					background-color:#fff166;
+				}
+			}	     	
+		}		
+	}
+     
 }
 
 @media (max-width: 991px) {  

@@ -1,4 +1,120 @@
 #content{
+	section#banner{
+		margin-bottom: 50px;
+	}
+
+	section#sobre{
+	    background-image: url("images/background-sobre.jpg");
+	    background-repeat: no-repeat;
+	    background-position: center; 
+		background-size: 100%;
+	    width: 100%;
+	   	padding:50px 0;
+	   	margin-bottom: 50px;
+
+	    div.container{
+	    	div.info-left{
+	    		background-color:#010101;
+
+	    		div.info-content{
+	    			padding:117px 50px;
+	    			img{
+	    				margin: 0 auto;
+	    			}
+	    		}
+	    	}
+
+	    	div.info-right{
+	    		background-color:white;
+
+	    		div.info-content{
+	    			padding:86px 30px;
+	    			h5{
+	    				font-weight: bold;
+	    			}
+	    		}
+	    	}
+	    }
+	}
+
+	section#newsletter{
+		margin-bottom: 50px;
+
+		div.news-left{
+			background-color:#bdbdbd;
+		}
+		div.news-right{
+			background-color:#f0f2f4;
+
+		}
+	}
+
+	section#produtos{
+		margin-bottom: 50px;
+	}
+
+	section#redes{
+		margin-bottom: 50px;
+
+		.redes_sociais_bot{
+			margin-bottom: 5px;
+			height:79px;
+			text-align: left;
+			list-style:none;
+			margin: 0 auto;
+			margin-top: 30px;
+			width: 440px;
+			padding:0;
+		}
+
+		.redes_sociais_bot li:hover{
+		    opacity: 0.6;
+		    filter: alpha(opacity=60); /* For IE8 and earlier */
+		}
+
+		.redes_sociais_bot a{
+			display: inline-block;
+			width:79px;
+			height:79px
+		}
+
+		.redes_sociais_bot .youtube{
+			background-image: url("images/redes-bot.png");
+			background-position: left,center;
+			background-repeat:no-repeat;
+			width:79px;
+			height:79px;
+			display:inline-block;		
+		}
+
+		.redes_sociais_bot .instagram{
+			background-image: url("images/redes-bot.png");
+			background-position: -88px,center;
+			background-repeat:no-repeat;
+			width:79px;
+			height:79px;
+			display:inline-block;		
+		}
+
+		.redes_sociais_bot .twitter{
+			background-image: url("images/redes-bot.png");
+			background-position: -175px,center;
+			background-repeat:no-repeat;
+			width:79px;
+			height:79px;
+			display:inline-block;		
+		}
+
+		.redes_sociais_bot .facebook{
+			background-image: url("images/redes-bot.png");
+			background-position: right,center;
+			background-repeat:no-repeat;
+			width:79px;
+			height:79px;
+			display:inline-block;		
+		}
+	}
+
 }
 
 @media (max-width: 991px) {  

@@ -1,5 +1,5 @@
 /*
-Theme Name: henjinovo
+Theme Name: nobreart
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -24,6 +24,59 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	font-family: Verdana, Geneva, sans-serif;
 	color:#606060;
 	text-align:center;
+	a{
+		font-family: Verdana, Geneva, sans-serif;
+		color:#606060;		
+	}
+
+	a:hover{
+		text-decoration: none;
+	}
+
+	h1{
+		margin: 0;
+		margin-bottom: 20px;
+		font-size: 36px;
+		color:#606060;
+	}
+
+	h1.small{
+		font-size: 26px;
+		color:#606060;
+		font-weight: bold;
+
+	}
+
+	h2{
+		margin: 0;
+		margin-bottom: 20px;
+		font-size: 26px;
+		color:#606060;
+		font-weight: bold;
+	}
+
+	h4{
+		font-size: 20px;
+	}
+
+	h5{
+		font-size:17px;
+		font-weight: normal;
+	}
+
+	.videoWrapper {
+	    position: relative;
+	    padding-bottom: 56.25%; /* 16:9 */
+	    padding-top: 25px;
+	    height: 0;
+	}
+	.videoWrapper iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}	
 
 	@import 'header';
 	@import 'content';

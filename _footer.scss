@@ -1,10 +1,41 @@
-#footer{
-	color:#FFFFFF;		
+#footer{	
 	text-align:left;
+	color:#FFFFFF;
 
-	.container{
+	div.footer-content{
+		padding:50px 0;
+		background-color:#010101;
+
+		ul{
+			padding:0;
+			margin: 0;
+			list-style-type: none;
+			a{
+				color:#FFFFFF;	
+			}
+			a:hover{
+				color:#fff40e;
+			}
+		}
+	}
+
+	div.copyrino{
+		text-align: center;
+		color: #606060;
+		background-color:#ebebeb;
+		padding:20px 0;
+		.col-md-10{
+			padding:12px;
+			a{
+				color: #606060;
+			}
+			a:hover{
+				color:#bfbfbf;
+			}
+		}
 	}
 }
+
 
 @media (max-width: 991px) {  
 

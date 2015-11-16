@@ -14,46 +14,73 @@
 get_header(); ?>
 
 <div id="content">
-	<div class="container">
+	<section id="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">			
+					<?php putRevSlider( "banner-index" ) ?>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">			
+					produto
+				</div>
+				<div class="col-md-4">			
+					produto
+				</div>
+				<div class="col-md-4">			
+					produto
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="sobre">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 info-left">
+					<div class="info-content">
+						<img class="img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/header-sobre.jpg"?>" />
+					</div>
+				</div>
+				<div class="col-md-6 info-right">
+					<div class="info-content">
+						<h1>NOBRE ARTE DESIGN</h1><br>
+						<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali</h5><br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alio.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.</p>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</section>
+
+	<section id="newsletter" class="container-fluid">
 		<div class="row">
-			<main class="col-md-8">
+			<div class="col-md-6 news-left"><img class="img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/novidades-left.png"?>" /></div>
+			<div class="col-md-6 news-right">news</div>				
+		</div>	
+	</section>
 
-			<?php if ( have_posts() ) : ?>
+	<section id="produtos">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">			
+					produto
+				</div>
+				<div class="col-md-4">			
+					produto
+				</div>
+				<div class="col-md-4">			
+					produto
+				</div>
+			</div>
+		</div>		
+	</section>
 
-				<?php if ( is_home() && ! is_front_page() ) : ?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					</header>
-				<?php endif; ?>
-
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php
-
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'template-parts/content', get_post_format() );
-					?>
-
-				<?php endwhile; ?>
-
-				<?php the_posts_navigation(); ?>
-
-			<?php else : ?>
-
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-			<?php endif; ?>
-			</main><!-- #main -->
-			<aside class="col-md-4">
-				<?php get_sidebar(); ?>
-			</aside>
-		</div><!-- .row -->
-	</div><!-- .container -->
+	<?php get_template_part( 'template-parts/redes-bot'); ?>
+	
 </div><!-- #content -->
 
 <?php get_footer(); ?>

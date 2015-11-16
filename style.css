@@ -1,5 +1,5 @@
 /*
-Theme Name: wooecomerce-bootstrap
+Theme Name: nobreart
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -19,3 +19,275 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+/* line 23, style.scss */
+#page {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #606060;
+  text-align: center;
+}
+/* line 27, style.scss */
+#page a {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #606060;
+}
+/* line 32, style.scss */
+#page a:hover {
+  text-decoration: none;
+}
+/* line 36, style.scss */
+#page h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #606060;
+}
+/* line 43, style.scss */
+#page h1.small {
+  font-size: 26px;
+  color: #606060;
+  font-weight: bold;
+}
+/* line 50, style.scss */
+#page h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #606060;
+  font-weight: bold;
+}
+/* line 58, style.scss */
+#page h4 {
+  font-size: 20px;
+}
+/* line 62, style.scss */
+#page h5 {
+  font-size: 17px;
+  font-weight: normal;
+}
+/* line 67, style.scss */
+#page .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+/* line 73, style.scss */
+#page .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 1, _header.scss */
+#page #header {
+  border-top: 5px solid #ffe800;
+  background-color: #010101;
+  margin-bottom: 10px;
+}
+/* line 8, _header.scss */
+#page #header div.back-black div.container div {
+  margin-bottom: 10px;
+}
+/* line 10, _header.scss */
+#page #header div.back-black div.container div div.header-logo {
+  text-align: left;
+}
+/* line 19, _header.scss */
+#page #header div.back-yellow {
+  background-color: #ffe800;
+}
+/* line 22, _header.scss */
+#page #header div.back-yellow nav.container ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+/* line 25, _header.scss */
+#page #header div.back-yellow nav.container ul li {
+  float: left;
+  list-style-type: none;
+  width: 14.2%;
+  position: relative;
+  min-height: 1px;
+  padding: 15px;
+}
+/* line 33, _header.scss */
+#page #header div.back-yellow nav.container ul li:hover {
+  background-color: #fff166;
+}
+/* line 2, _content.scss */
+#page #content section#banner {
+  margin-bottom: 50px;
+}
+/* line 6, _content.scss */
+#page #content section#sobre {
+  background-image: url("images/background-sobre.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+/* line 16, _content.scss */
+#page #content section#sobre div.container div.info-left {
+  background-color: #010101;
+}
+/* line 19, _content.scss */
+#page #content section#sobre div.container div.info-left div.info-content {
+  padding: 117px 50px;
+}
+/* line 21, _content.scss */
+#page #content section#sobre div.container div.info-left div.info-content img {
+  margin: 0 auto;
+}
+/* line 27, _content.scss */
+#page #content section#sobre div.container div.info-right {
+  background-color: white;
+}
+/* line 30, _content.scss */
+#page #content section#sobre div.container div.info-right div.info-content {
+  padding: 86px 30px;
+}
+/* line 32, _content.scss */
+#page #content section#sobre div.container div.info-right div.info-content h5 {
+  font-weight: bold;
+}
+/* line 40, _content.scss */
+#page #content section#newsletter {
+  margin-bottom: 50px;
+}
+/* line 43, _content.scss */
+#page #content section#newsletter div.news-left {
+  background-color: #bdbdbd;
+}
+/* line 46, _content.scss */
+#page #content section#newsletter div.news-right {
+  background-color: #f0f2f4;
+}
+/* line 52, _content.scss */
+#page #content section#produtos {
+  margin-bottom: 50px;
+}
+/* line 56, _content.scss */
+#page #content section#redes {
+  margin-bottom: 50px;
+}
+/* line 59, _content.scss */
+#page #content section#redes .redes_sociais_bot {
+  margin-bottom: 5px;
+  height: 79px;
+  text-align: left;
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 440px;
+  padding: 0;
+}
+/* line 70, _content.scss */
+#page #content section#redes .redes_sociais_bot li:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+/* line 75, _content.scss */
+#page #content section#redes .redes_sociais_bot a {
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+}
+/* line 81, _content.scss */
+#page #content section#redes .redes_sociais_bot .youtube {
+  background-image: url("images/redes-bot.png");
+  background-position: left,center;
+  background-repeat: no-repeat;
+  width: 79px;
+  height: 79px;
+  display: inline-block;
+}
+/* line 90, _content.scss */
+#page #content section#redes .redes_sociais_bot .instagram {
+  background-image: url("images/redes-bot.png");
+  background-position: -88px,center;
+  background-repeat: no-repeat;
+  width: 79px;
+  height: 79px;
+  display: inline-block;
+}
+/* line 99, _content.scss */
+#page #content section#redes .redes_sociais_bot .twitter {
+  background-image: url("images/redes-bot.png");
+  background-position: -175px,center;
+  background-repeat: no-repeat;
+  width: 79px;
+  height: 79px;
+  display: inline-block;
+}
+/* line 108, _content.scss */
+#page #content section#redes .redes_sociais_bot .facebook {
+  background-image: url("images/redes-bot.png");
+  background-position: right,center;
+  background-repeat: no-repeat;
+  width: 79px;
+  height: 79px;
+  display: inline-block;
+}
+/* line 1, _footer.scss */
+#page #footer {
+  text-align: left;
+  color: #FFFFFF;
+}
+/* line 5, _footer.scss */
+#page #footer div.footer-content {
+  padding: 50px 0;
+  background-color: #010101;
+}
+/* line 9, _footer.scss */
+#page #footer div.footer-content ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* line 13, _footer.scss */
+#page #footer div.footer-content ul a {
+  color: #FFFFFF;
+}
+/* line 16, _footer.scss */
+#page #footer div.footer-content ul a:hover {
+  color: #fff40e;
+}
+/* line 22, _footer.scss */
+#page #footer div.copyrino {
+  text-align: center;
+  color: #606060;
+  background-color: #ebebeb;
+  padding: 20px 0;
+}
+/* line 27, _footer.scss */
+#page #footer div.copyrino .col-md-10 {
+  padding: 12px;
+}
+/* line 29, _footer.scss */
+#page #footer div.copyrino .col-md-10 a {
+  color: #606060;
+}
+/* line 32, _footer.scss */
+#page #footer div.copyrino .col-md-10 a:hover {
+  color: #bfbfbf;
+}
+
+/* line 87, style.scss */
+.e-cinza:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* line 92, style.scss */
+.e-claro:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+
+/*# sourceMappingURL=style.css.map */
