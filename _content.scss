@@ -1,23 +1,42 @@
 #content{
 	section#banner{
 		margin-bottom: 50px;
+
+		div.categoria-efeito{
+			div.title{
+				position:absolute; 
+				z-index:100;
+				right:15px;
+				top:25px; 
+				width:200px; 
+				text-align:left; 
+				padding:5px; 
+				background-color:#ffe800; 
+				color:#606060;	
+				display: none;
+				font-weight: bold;
+			}
+			img:hover{
+				display: block;
+			}
+		}
 	}
 
 	section#sobre{
 	    background-image: url("images/background-sobre.jpg");
 	    background-repeat: no-repeat;
 	    background-position: center; 
-		background-size: 100%;
 	    width: 100%;
-	   	padding:50px 0;
+	   	padding:80px 0;
 	   	margin-bottom: 50px;
 
 	    div.container{
 	    	div.info-left{
 	    		background-color:#010101;
-
+				min-height: 600px;
 	    		div.info-content{
-	    			padding:117px 50px;
+	    			padding:170px 50px;
+	    			
 	    			img{
 	    				margin: 0 auto;
 	    			}
@@ -26,9 +45,9 @@
 
 	    	div.info-right{
 	    		background-color:white;
-
+				min-height: 600px;
 	    		div.info-content{
-	    			padding:86px 30px;
+	    			padding:100px 30px;
 	    			h5{
 	    				font-weight: bold;
 	    			}
@@ -51,6 +70,50 @@
 
 	section#produtos{
 		margin-bottom: 50px;
+
+		div.categoria-efeito{
+			div.title{
+				position:absolute; 
+				z-index:100;
+				right:15px;
+				top:25px; 
+				width:200px; 
+				text-align:left; 
+				padding:5px; 
+				background-color:#ffe800; 
+				color:#606060;	
+				display: none;
+				font-weight: bold;
+			}
+			img:hover{
+				display: block;
+			}
+		}
+	}
+
+	section#produtos-procurados{
+		margin-bottom: 50px;
+
+		div.title{
+			div.content{
+				background-color:#545454;
+				color:white;
+				text-align: left;
+				padding:10px;				
+			}
+
+		}
+		div.links{
+			div.content{
+				background-color:#f0f2f4;
+				padding:10px;
+
+				span{
+					margin: 10px 20px;
+					float: left;
+				}				
+			}
+		}
 	}
 
 	section#redes{

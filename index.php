@@ -20,16 +20,25 @@ get_header(); ?>
 				<div class="col-md-12">			
 					<?php putRevSlider( "banner-index" ) ?>
 				</div>
-			</div>
+			</div><br>
 			<div class="row">
-				<div class="col-md-4">			
-					produto
+				<div class="col-md-4 categoria-efeito">		
+					<a href="<?php echo esc_url( home_url( '/' )); ?>">
+						<div class="title efeitoa">POLTRONA</div>
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					</a>
 				</div>
-				<div class="col-md-4">			
-					produto
+				<div class="col-md-4 categoria-efeito">		
+					<a href="<?php echo esc_url( home_url( '/' )); ?>">
+						<div class="title efeitoa">POLTRONA</div>
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					</a>
 				</div>
-				<div class="col-md-4">			
-					produto
+				<div class="col-md-4 categoria-efeito">		
+					<a href="<?php echo esc_url( home_url( '/' )); ?>">
+						<div class="title efeitoa">POLTRONA</div>
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -40,40 +49,63 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-md-6 info-left">
 					<div class="info-content">
-						<img class="img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/header-sobre.jpg"?>" />
+						<img style="display:none" class="img-responsive efeitob" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/header-sobre.jpg"?>" />
 					</div>
 				</div>
 				<div class="col-md-6 info-right">
 					<div class="info-content">
-						<h1>NOBRE ARTE DESIGN</h1><br>
-						<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali</h5><br>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alio.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.</p>
+						<h1 style="display:none" class="efeitoc">NOBRE ARTE DESIGN</h1><br>
+						<h5 style="display:none" class="efeitoc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali</h5><br>
+						<p style="display:none" class="efeitoc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alio.</p>
+						<p style="display:none" class="efeitoc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.</p>
+						<p style="display:none" class="efeitoc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.</p>
 					</div>
 				</div>			
 			</div>
 		</div>
 	</section>
 
-	<section id="newsletter" class="container-fluid">
-		<div class="row">
-			<div class="col-md-6 news-left"><img class="img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/novidades-left.png"?>" /></div>
-			<div class="col-md-6 news-right">news</div>				
-		</div>	
-	</section>
+	<?php get_template_part( 'template-parts/newsletter'); ?>
 
 	<section id="produtos">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">			
-					produto
+				<div class="col-md-4 categoria-efeito">		
+					<a href="<?php echo esc_url( home_url( '/' )); ?>">
+						<div class="title efeitod">POLTRONA</div>
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					</a>
 				</div>
-				<div class="col-md-4">			
-					produto
+				<div class="col-md-4 categoria-efeito">		
+					<a href="<?php echo esc_url( home_url( '/' )); ?>">
+						<div class="title efeitod">POLTRONA</div>
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					</a>
 				</div>
-				<div class="col-md-4">			
-					produto
+				<div class="col-md-4 categoria-efeito">		
+					<a href="<?php echo esc_url( home_url( '/' )); ?>">
+						<div class="title efeitod">POLTRONA</div>
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					</a>
+				</div>
+			</div>
+		</div>		
+	</section>
+
+	<section id="produtos-procurados">
+		<div class="container">
+			<div class="row title">
+				<div class="col-md-12">
+					<div class="content">
+						<span>Os produtos mais procurados na Nobre Arte Design</span>
+					</div>
+				</div>
+			</div>
+			<div class="row links">
+				<div class="col-md-12">
+					<div class="content clearfix">
+						<span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span>
+					</div>
 				</div>
 			</div>
 		</div>		

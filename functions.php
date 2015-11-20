@@ -117,10 +117,11 @@ function site_scripts() {
 	wp_enqueue_style( 'site-style-bootstrap', get_template_directory_uri() ."/bootstrap/css/bootstrap.min.css" );
 	wp_enqueue_style( 'site-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'site-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-
-	wp_enqueue_script( 'site-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'site-script-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js');
 	wp_enqueue_script( 'site-script-bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js');
+	wp_enqueue_script( 'site-script-jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js');
+	wp_enqueue_script( 'site-script-mask', get_template_directory_uri() . '/js/jquery.mask.min.js');
+	wp_enqueue_script( 'site-script-site', get_template_directory_uri() . '/js/script.js');
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -134,6 +135,35 @@ if (!function_exists('loop_columns')) {
 		return 4; // 3 products per row
 	}
 }
+
+add_shortcode( 'gallery', '__return_false' );
+
+//CUSTOM POST TYPES
+function change_post_menu_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Produtos';
+    $submenu['edit.php'][5][0] = 'Produtos';
+    $submenu['edit.php'][10][0] = 'Adicionar Produtos';
+    echo '';
+}
+function change_post_object_label() {
+        global $wp_post_types;
+        $labels = &$wp_post_types['post']->labels;
+        $labels->name = 'Produtos';
+        $labels->singular_name = 'Produto';
+        $labels->add_new = 'Adicionar Produto';
+        $labels->add_new_item = 'Adicionar Produto';
+        $labels->edit_item = 'Editar Produto';
+        $labels->new_item = 'Produto';
+        $labels->view_item = 'Ver Produto';
+        $labels->search_items = 'Procurar Produto';
+        $labels->not_found = 'Produto não encontrado';
+        $labels->not_found_in_trash = 'Sem Produtos na lixeira';
+}
+add_action( 'init', 'change_post_object_label' );
+add_action( 'admin_menu', 'change_post_menu_label' );
+
 
 /**
  * Implement the Custom Header feature.
