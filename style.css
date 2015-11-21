@@ -43,7 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 43, style.scss */
 #page h1.small {
-  font-size: 26px;
+  font-size: 24px;
   color: #606060;
   font-weight: bold;
 }
@@ -51,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 #page h2 {
   margin: 0;
   margin-bottom: 20px;
-  font-size: 26px;
+  font-size: 22px;
   color: #606060;
   font-weight: bold;
 }
@@ -79,6 +79,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   left: 0;
   width: 100%;
   height: 100%;
+}
+/* line 81, style.scss */
+#page .basebreadcrumb {
+  font-size: 0.8em;
+  padding: 0.5em 1em;
+  background: #fff;
+  margin-bottom: 20px;
+  text-align: left;
+}
+/* line 89, style.scss */
+#page .bx-wrapper .bx-viewport {
+  -webkit-box-shadow: 0 0 0px;
+  box-shadow: 0 0 0px;
+  border: 0px solid white;
+  left: 0px;
+}
+/* line 95, style.scss */
+#page .bx-wrapper .bx-viewport .bx-clone {
+  display: none !important;
 }
 /* line 1, _header.scss */
 #page #header {
@@ -118,7 +137,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 2, _content.scss */
 #page #content section#banner {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 /* line 6, _content.scss */
 #page #content section#banner div.categoria-efeito div.title {
@@ -140,7 +159,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 25, _content.scss */
 #page #content section#sobre {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   background-image: url("images/background-sobre.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -175,7 +194,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 59, _content.scss */
 #page #content section#newsletter {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 /* line 62, _content.scss */
 #page #content section#newsletter div.news-left {
@@ -187,7 +206,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 71, _content.scss */
 #page #content section#produtos {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 /* line 75, _content.scss */
 #page #content section#produtos div.categoria-efeito div.title {
@@ -209,7 +228,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 94, _content.scss */
 #page #content section#produtos-procurados {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 /* line 98, _content.scss */
 #page #content section#produtos-procurados div.title div.content {
@@ -230,7 +249,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 119, _content.scss */
 #page #content section#redes {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 /* line 122, _content.scss */
 #page #content section#redes .redes_sociais_bot {
@@ -316,6 +335,53 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 #page #content section#categorias article a:hover {
   background-color: #fff489;
 }
+/* line 205, _content.scss */
+#page #content section#produto-single {
+  margin-bottom: 20px;
+}
+/* line 209, _content.scss */
+#page #content section#produto-single article div.slider1 {
+  margin-top: 10px;
+}
+/* line 212, _content.scss */
+#page #content section#produto-single article div.wrap {
+  padding-left: 40px;
+}
+/* line 214, _content.scss */
+#page #content section#produto-single article div.wrap h5 {
+  font-style: italic;
+  margin-bottom: 40px;
+  display: block;
+}
+/* line 223, _content.scss */
+#page #content section#produto-relacionado {
+  margin-bottom: 60px;
+}
+/* line 226, _content.scss */
+#page #content section#produto-relacionado .container {
+  border-top: 3px solid #ffe800;
+  padding-top: 40px;
+}
+/* line 229, _content.scss */
+#page #content section#produto-relacionado .container article {
+  border: 1px solid #D8D8D8;
+  padding: 25px 10px;
+  min-height: 395px;
+}
+/* line 234, _content.scss */
+#page #content section#produto-relacionado .container article a {
+  background-color: #ffe800;
+  color: white;
+  padding: 10px;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+/* line 243, _content.scss */
+#page #content section#produto-relacionado .container article a:hover {
+  background-color: #fff489;
+}
 /* line 1, _footer.scss */
 #page #footer {
   text-align: left;
@@ -360,13 +426,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #bfbfbf;
 }
 
-/* line 87, style.scss */
+/* line 105, style.scss */
 .e-cinza:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 92, style.scss */
+/* line 110, style.scss */
 .e-claro:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);

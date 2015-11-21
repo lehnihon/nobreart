@@ -1,6 +1,6 @@
 #content{
 	section#banner{
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 
 		div.categoria-efeito{
 			div.title{
@@ -23,7 +23,7 @@
 	}
 
 	section#sobre{
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 	    background-image: url("images/background-sobre.jpg");
 	    background-repeat: no-repeat;
 	    background-position: center; 
@@ -57,7 +57,7 @@
 	}
 
 	section#newsletter{
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 
 		div.news-left{
 			background-color:#bdbdbd;
@@ -69,7 +69,7 @@
 	}
 
 	section#produtos{
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 
 		div.categoria-efeito{
 			div.title{
@@ -92,7 +92,7 @@
 	}
 
 	section#produtos-procurados{
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 
 		div.title{
 			div.content{
@@ -117,7 +117,7 @@
 	}
 
 	section#redes{
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 
 		.redes_sociais_bot{
 			margin-bottom: 5px;
@@ -200,6 +200,52 @@
 				background-color:#fff489;
 			}
 		}
+	}
+
+	section#produto-single{
+		margin-bottom: 20px;
+
+		article{
+			div.slider1{
+				margin-top: 10px;
+			}
+			div.wrap{
+				padding-left:40px;
+				h5{
+					font-style: italic;
+					margin-bottom: 40px;
+					display: block;
+				}			
+			}			
+		}
+	}
+
+	section#produto-relacionado{
+		margin-bottom: 60px;
+
+		.container{
+			border-top:3px solid #ffe800;
+			padding-top:40px;
+			article{
+				border: 1px solid #D8D8D8;
+				padding:25px 10px;
+				min-height: 395px;
+
+				a{
+					background-color:#ffe800;
+					color:white;
+					padding:10px;
+					display: block;
+					width: 80%;
+					margin: 0 auto;
+					margin-top: 25px;
+				}
+				a:hover{
+					background-color:#fff489;
+				}
+			}
+		}
+		
 	}
 }
 

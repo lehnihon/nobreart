@@ -41,7 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	}
 
 	h1.small{
-		font-size: 26px;
+		font-size: 24px;
 		color:#606060;
 		font-weight: bold;
 
@@ -50,7 +50,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	h2{
 		margin: 0;
 		margin-bottom: 20px;
-		font-size: 26px;
+		font-size: 22px;
 		color:#606060;
 		font-weight: bold;
 	}
@@ -78,10 +78,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	    height: 100%;
 	}	
 
+	.basebreadcrumb {
+		font-size: 0.8em;
+		padding: 0.5em 1em;
+		background:#fff;
+		margin-bottom:20px;
+		text-align: left;
+	}
+
+	.bx-wrapper .bx-viewport{
+		-webkit-box-shadow: 0 0 0px ; 
+	    box-shadow: 0 0 0px ; 
+	    border: 0px solid white; 
+	    left: 0px;
+
+		.bx-clone{
+		   display: none !important;
+		} 		
+	}
+
 	@import 'header';
 	@import 'content';
 	@import 'footer';
-
 
 }
 .e-cinza:hover{

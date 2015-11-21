@@ -114,13 +114,17 @@ add_action( 'widgets_init', 'site_widgets_init' );
  * Enqueue scripts and styles.
  */
 function site_scripts() {
-	wp_enqueue_style( 'site-style-bootstrap', get_template_directory_uri() ."/bootstrap/css/bootstrap.min.css" );
+	wp_enqueue_style( 'site-style-bxslider', get_template_directory_uri() ."/bootstrap/css/bootstrap.min.css" );
+	wp_enqueue_style( 'site-style-bootstrap', get_template_directory_uri() ."/js/jquery.bxslider.css" );
+	wp_enqueue_style( 'site-style-lightbox', get_template_directory_uri() ."/js/lightbox2/src/css/lightbox.css" );
 	wp_enqueue_style( 'site-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'site-script-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js');
 	wp_enqueue_script( 'site-script-bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js');
 	wp_enqueue_script( 'site-script-jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js');
 	wp_enqueue_script( 'site-script-mask', get_template_directory_uri() . '/js/jquery.mask.min.js');
+	wp_enqueue_script( 'site-script-bxslider', get_template_directory_uri() . '/js/jquery.bxslider.min.js',array(),false,tru);
+	wp_enqueue_script( 'site-script-lightbox', get_template_directory_uri() . '/js/lightbox2/src/js/lightbox.js',array(),false,true);
 	wp_enqueue_script( 'site-script-site', get_template_directory_uri() . '/js/script.js');
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -128,7 +132,7 @@ function site_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'site_scripts' );
 
-add_shortcode( 'gallery', '__return_false' );
+
 
 
 function my_post_queries( $query ) {
@@ -144,6 +148,46 @@ function my_post_queries( $query ) {
 add_action( 'pre_get_posts', 'my_post_queries' );
 
 
+function BaseBreadcrumb() {
+    echo '<div class="basebreadcrumb">';
+    if (!is_home()) {
+        echo '<a href="'. esc_url(home_url('/')) .'">';
+        echo 'Home';
+        echo "</a> / ";
+        if (is_category() || is_single()) {
+            the_category(' / ');
+            if (is_single()) {
+                echo " / ";
+                the_title();
+            }
+        } elseif (is_page()) {
+            echo the_title();
+        }
+    }
+        echo '</div>';
+}
+
+function categoryIds(){
+	if(has_category()){
+		$categories = get_the_category();
+		$ids = array();
+		foreach($categories as $category){
+			$ids[] = $category->cat_ID;
+		}
+		return $ids;
+	}	
+}
+
+function categoryList(){
+	if(has_category()){
+		$categories = get_the_category();
+		$list = '';
+		foreach($categories as $category){
+			$list .= $category->name.', ';
+		}
+		echo substr($list, 0, -2);
+	}
+}
 
 //CUSTOM POST TYPES
 function change_post_menu_label() {
@@ -170,7 +214,6 @@ function change_post_object_label() {
 }
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
-
 
 /**
  * Implement the Custom Header feature.
