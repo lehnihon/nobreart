@@ -75,7 +75,7 @@ function site_setup() {
 		'default-image' => '',
 	) ) );
 
-	add_image_size('home-thumb',780,300,true);
+	add_image_size('home-thumb',600,600,true);
 }
 endif; // site_setup
 add_action( 'after_setup_theme', 'site_setup' );
@@ -128,15 +128,22 @@ function site_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'site_scripts' );
 
-// Change number or products per row to 3
-add_filter('loop_shop_columns', 'loop_columns');
-if (!function_exists('loop_columns')) {
-	function loop_columns() {
-		return 4; // 3 products per row
-	}
-}
-
 add_shortcode( 'gallery', '__return_false' );
+
+
+function my_post_queries( $query ) {
+  // do not alter the query on wp-admin pages and only alter it if it's the main query
+  if (!is_admin() && $query->is_main_query()){
+
+    if(is_category()){
+      $query->set('posts_per_page', 8);
+    }
+
+  }
+}
+add_action( 'pre_get_posts', 'my_post_queries' );
+
+
 
 //CUSTOM POST TYPES
 function change_post_menu_label() {

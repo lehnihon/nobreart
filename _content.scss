@@ -1,6 +1,6 @@
 #content{
 	section#banner{
-		margin-bottom: 50px;
+		margin-bottom: 80px;
 
 		div.categoria-efeito{
 			div.title{
@@ -23,12 +23,12 @@
 	}
 
 	section#sobre{
+		margin-bottom: 80px;
 	    background-image: url("images/background-sobre.jpg");
 	    background-repeat: no-repeat;
 	    background-position: center; 
 	    width: 100%;
 	   	padding:80px 0;
-	   	margin-bottom: 50px;
 
 	    div.container{
 	    	div.info-left{
@@ -57,7 +57,7 @@
 	}
 
 	section#newsletter{
-		margin-bottom: 50px;
+		margin-bottom: 80px;
 
 		div.news-left{
 			background-color:#bdbdbd;
@@ -69,7 +69,7 @@
 	}
 
 	section#produtos{
-		margin-bottom: 50px;
+		margin-bottom: 80px;
 
 		div.categoria-efeito{
 			div.title{
@@ -92,7 +92,7 @@
 	}
 
 	section#produtos-procurados{
-		margin-bottom: 50px;
+		margin-bottom: 80px;
 
 		div.title{
 			div.content{
@@ -117,7 +117,7 @@
 	}
 
 	section#redes{
-		margin-bottom: 50px;
+		margin-bottom: 80px;
 
 		.redes_sociais_bot{
 			margin-bottom: 5px;
@@ -177,7 +177,30 @@
 			display:inline-block;		
 		}
 	}
+	
+	section#categorias{
+		margin-top: 40px;
+		margin-bottom: 80px;
 
+		article{
+			border: 1px solid #D8D8D8;
+			padding:25px 10px;
+			min-height: 395px;
+
+			a{
+				background-color:#ffe800;
+				color:white;
+				padding:10px;
+				display: block;
+				width: 80%;
+				margin: 0 auto;
+				margin-top: 25px;
+			}
+			a:hover{
+				background-color:#fff489;
+			}
+		}
+	}
 }
 
 @media (max-width: 991px) {  
