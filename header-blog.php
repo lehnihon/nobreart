@@ -8,11 +8,18 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<header id="header">
+	<header id="header-blog">
 		<div class="back-black">
 			<div class="container">
 				<div class="row">
@@ -31,7 +38,7 @@
 							</div>
 							<div class="row">
 								<form role="search" method="get" class="col-md-12 search-form" action="<?php echo home_url( '/' ); ?>">
-									<input type="hidden" name="post_type" value="post" /><input type="search" class="pesquisar-input" placeholder="<?php echo esc_attr_x( 'Buscar Produto', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" /><input type="image" class="pesquisar-submit" alt="Search"  src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/btn-buscar.jpg"; ?>" />
+									<input type="hidden" name="post_type" value="blog" /><input type="search" class="pesquisar-input" placeholder="<?php echo esc_attr_x( 'Buscar Blog', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" /><input type="image" class="pesquisar-submit" alt="Search"  src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/btn-buscar.jpg"; ?>" />
 								</form>							
 							</div>							
 						</div>
@@ -39,36 +46,22 @@
 				</div><!-- .row -->
 			</div><!-- .container -->			
 		</div>
-		<div class="back-yellow">
+		<div class="back-yellow">		
+		</div>
+		<div class="menu-blog">
 			<nav class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="btn-group botao-menu-responsivo">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="#">A EMPRESA</a></li>
-								<li><a href="#">PRODUTOS</a></li>
-								<li><a href="#">DECORAÇÃO</a></li>
-								<li><a href="#">SERVIÇOS</a></li>
-								<li><a href="#">LOCALIZAÇÃO</a></li>
-								<li><a href="#">BLOG</a></li>
-								<li><a href="#">CONTATO</a></li>
-							</ul>
-						</div>
-						<ul class="menu-princ">
-							<li><a href="#">A EMPRESA</a></li>
-							<li><a href="#">PRODUTOS</a></li>
-							<li><a href="#">DECORAÇÃO</a></li>
-							<li><a href="#">SERVIÇOS</a></li>
-							<li><a href="#">LOCALIZAÇÃO</a></li>
-							<li><a href="#">BLOG</a></li>
-							<li><a href="#">CONTATO</a></li>
+						<ul>
+							<?php 
+							$categories = get_terms( 'categoria_blog' );
+							foreach($categories as $category):
+							?>
+								<li><a href="<?php echo esc_url( home_url( '/' ).'categoria-blog/'.$category->slug); ?>"><?php echo $category->name; ?></a></li>
+							<?php endforeach; ?>
 						</ul>						
-					</div>
+					</div>		
 				</div>
 			</nav>			
 		</div>
 	</header><!-- #masthead -->
-

@@ -136,14 +136,14 @@ add_action( 'wp_enqueue_scripts', 'site_scripts' );
 
 
 function my_post_queries( $query ) {
-  // do not alter the query on wp-admin pages and only alter it if it's the main query
-  if (!is_admin() && $query->is_main_query()){
+  	// do not alter the query on wp-admin pages and only alter it if it's the main query
+  	if (!is_admin() && $query->is_main_query()){
 
-    if(is_category()){
-      $query->set('posts_per_page', 8);
-    }
+		if(is_category()){
+			$query->set('posts_per_page', 8);
+		}
 
-  }
+	}
 }
 add_action( 'pre_get_posts', 'my_post_queries' );
 
@@ -189,7 +189,24 @@ function categoryList(){
 	}
 }
 
-//CUSTOM POST TYPES
+function template_chooser($template)   
+{    
+	global $wp_query;   
+	$post_type = get_query_var('post_type');   
+	if( isset($_GET['s']) && $post_type == 'blog' )   
+	{
+		return locate_template('search-blog.php');  //  redirect to archive-search.php
+	}   
+	return $template;   
+}
+add_filter('template_include', 'template_chooser');
+
+/*
+
+CUSTOM POST TYPES
+
+*/
+
 function change_post_menu_label() {
     global $menu;
     global $submenu;
@@ -214,6 +231,53 @@ function change_post_object_label() {
 }
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
+
+	function register_post_type_blog(){
+		$singular = 'Blog Post';
+		$plural = 'Blog Posts';
+		$labels = array(
+			'name' => $plural,
+			'singular_name' => $singular,
+			'add_new_item' => 'Adicionar novo '.$singular,
+			);
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+	        'supports' => array('title', 'editor','thumbnail'),
+	        'menu_position' => 5
+			);
+
+		register_post_type('blog',$args);
+	}
+	add_action(	'init','register_post_type_blog');
+	flush_rewrite_rules();
+	function register_taxonomy_categoria(){
+	    $labels = array(
+	        'name'              => _x( 'Categoria', 'taxonomy general name' ),
+	        'singular_name'     => _x( 'Categorias', 'taxonomy singular name' ),
+	        'search_items'      => __( 'Procurar Categoria' ),
+	        'all_items'         => __( 'Todas Categorias' ),
+	        'parent_item'       => __( 'Parent Course' ),
+	        'parent_item_colon' => __( 'Parent Course:' ),
+	        'edit_item'         => __( 'Editar Categoria' ),
+	        'update_item'       => __( 'Atualizar Categoria' ),
+	        'add_new_item'      => __( 'Adicionar Categoria' ),
+	        'new_item_name'     => __( 'Nome Nova Categoria' ),
+	        'menu_name'         => __( 'Categoria' ),
+	    );
+	 
+	    $args = array(
+	        'hierarchical'      => true,
+	        'labels'            => $labels,
+	        'show_ui'           => true,
+	        'show_admin_column' => true,
+	        'query_var'         => true,
+	        'rewrite'           => array( 'slug' => 'categoria-blog' ),
+	    );
+		register_taxonomy( 'categoria_blog', 'blog', $args );
+	}
+	add_action('init','register_taxonomy_categoria');
+
 
 /**
  * Implement the Custom Header feature.

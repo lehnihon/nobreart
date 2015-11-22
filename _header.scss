@@ -10,7 +10,75 @@
 		     	div.header-logo{
 		     		text-align: left;
 		     	}  
-		     	div.header-menu{
+		     	div.header-busca{
+		     		padding:25px 0;
+					
+					form.search-form{
+						text-align: right;
+					}
+
+					input.pesquisar-input{
+						padding:10px;
+						vertical-align: top;
+						margin-right: 2px;
+					}
+
+			        .redes_sociais_header{
+			            margin-top: 10px;
+			            margin-bottom: 5px;
+			            height: 31px;
+			            text-align: left;
+			            list-style:none;
+			            float:right;
+			            padding-left: 10px;
+			        }
+
+			        .redes_sociais_header li:hover{
+			            opacity: 0.6;
+			            filter: alpha(opacity=60); /* For IE8 and earlier */
+			        }
+
+			        .redes_sociais_header a{
+			            display: inline-block;
+			            width:31px;
+			            height:31px;
+			        }
+
+			        .redes_sociais_header .youtube{
+			            background-image: url("images/redes-header.png");
+			            background-position: 0px,center;
+			            background-repeat:no-repeat;
+			            width:31px;
+			            height:31px;
+			            display:inline-block;       
+			        }
+
+			        .redes_sociais_header .instagram{
+			            background-image: url("images/redes-header.png");
+			            background-position: -35px,center;
+			            background-repeat:no-repeat;
+			            width:31px;
+			            height:31px;
+			            display:inline-block;       
+			        }
+
+			        .redes_sociais_header .twitter{
+			            background-image: url("images/redes-header.png");
+			            background-position: -70px,center;
+			            background-repeat:no-repeat;
+			            width:31px;
+			            height:31px;
+			            display:inline-block;       
+			        }
+
+			        .redes_sociais_header .facebook{
+			            background-image: url("images/redes-header.png");
+			            background-position: -105px,center;
+			            background-repeat:no-repeat;
+			            width:31px;
+			            height:31px;
+			            display:inline-block;       
+			        }		     		
 		     	}      	
 		     }
 
@@ -19,7 +87,28 @@
 	div.back-yellow{
 		background-color:#ffe800;
 		nav.container{	
-			ul{
+            div.botao-menu-responsivo{
+                float: left;
+                margin: 10px; 
+
+                .dropdown-menu{
+                    li{
+                        width: 100%;
+                        a{
+                            width: 100%;
+                            color:#606060;
+                            padding:15px;
+                        }
+                        a:hover{
+                            background-color:#f0f2f4;
+                        }
+                        a.ativob{
+                             background-color:#f0f2f4;
+                        }
+                    }
+                }
+            }
+			ul.menu-princ{
 				margin-bottom: 0;
 				padding-left:0;
 				li{
@@ -39,10 +128,149 @@
      
 }
 
-@media (max-width: 991px) {  
+#header-blog{
+	border-top:5px solid #ffe800; 
+	background-color:#010101;
+	margin-bottom:10px;
 
+	div.back-black{
+	    div.container{   
+	        div{
+	        	margin-bottom: 10px;
+		     	div.header-logo{
+		     		text-align: left;
+		     	}  
+		     	div.header-busca{
+		     		padding:25px 0;
+					
+					form.search-form{
+						text-align: right;
+					}
+
+					input.pesquisar-input{
+						padding:10px;
+						vertical-align: top;
+						margin-right: 2px;
+					}
+
+			        .redes_sociais_header{
+			            margin-top: 10px;
+			            margin-bottom: 5px;
+			            height: 31px;
+			            text-align: left;
+			            list-style:none;
+			            float:right;
+			            padding-left: 10px;
+			        }
+
+			        .redes_sociais_header li:hover{
+			            opacity: 0.6;
+			            filter: alpha(opacity=60); /* For IE8 and earlier */
+			        }
+
+			        .redes_sociais_header a{
+			            display: inline-block;
+			            width:31px;
+			            height:31px;
+			        }
+
+			        .redes_sociais_header .youtube{
+			            background-image: url("images/redes-header.png");
+			            background-position: 0px,center;
+			            background-repeat:no-repeat;
+			            width:31px;
+			            height:31px;
+			            display:inline-block;       
+			        }
+
+			        .redes_sociais_header .instagram{
+			            background-image: url("images/redes-header.png");
+			            background-position: -35px,center;
+			            background-repeat:no-repeat;
+			            width:31px;
+			            height:31px;
+			            display:inline-block;       
+			        }
+
+			        .redes_sociais_header .twitter{
+			            background-image: url("images/redes-header.png");
+			            background-position: -70px,center;
+			            background-repeat:no-repeat;
+			            width:31px;
+			            height:31px;
+			            display:inline-block;       
+			        }
+
+			        .redes_sociais_header .facebook{
+			            background-image: url("images/redes-header.png");
+			            background-position: -105px,center;
+			            background-repeat:no-repeat;
+			            width:31px;
+			            height:31px;
+			            display:inline-block;       
+			        }		     		
+		     	}      	
+		     }
+
+	    }  		
+	}
+	div.back-yellow{
+		background-color:#ffe800;
+		height: 10px;	
+	}
+	div.menu-blog{
+		background-color:white;
+		nav.container{	
+			ul{
+				margin-bottom: 0;
+				padding-left:0;
+				li{
+					float: left;
+					list-style-type: none;
+					width: 14.2%;
+					position: relative;
+				    min-height: 1px;
+				    padding: 15px;
+				}
+				li a{
+					font-weight: bold;
+				}
+				li a:hover{
+					color:#fff166;
+				}
+			}	     	
+		}			
+	}
 }
 
+@media (max-width: 991px) {  
+    .redes_sociais_header{
+        float:left !important;
+    }
+
+    .botao-menu-responsivo{
+        display: inline-block;
+    }
+
+	ul.menu-princ{
+		display:none;
+	}
+
+	form.search-form{
+		text-align: left !important;
+	}
+
+	div.header-busca{
+		padding:0 !important;
+	}
+
+}   
+
+
 @media (min-width: 992px) {  
+
+    .botao-menu-responsivo{
+        display: none;
+    }
   
 }

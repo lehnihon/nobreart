@@ -23,7 +23,7 @@ get_header(); ?>
 			</div><br>
 			<div class="row">
 				<div class="col-md-4 categoria-efeito">		
-					<a href="<?php echo esc_url( home_url( '/' )); ?>">
+					<a href="<?php echo esc_url( home_url( '/' )."/categoria/categoria-teste"); ?>">
 						<div class="title efeitoa">POLTRONA</div>
 						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
 					</a>

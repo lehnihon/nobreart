@@ -1,15 +1,5 @@
-<?php
-/**
- * The sidebar containing the main widget area.
- *
- * @package site
- */
-
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
-?>
-
-<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</div><!-- #secondary -->
+<aside>
+	<div class="fb-like-box videoWrapper" style="padding-top:0" data-href="https://www.facebook.com/xtremegoldteam" data-width="360" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+	<?php putRevSlider( "publicidade2" ) ?><br>
+	<?php putRevSlider( "publicidade3" ) ?><br>
+</aside>
