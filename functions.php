@@ -139,9 +139,7 @@ function my_post_queries( $query ) {
   	// do not alter the query on wp-admin pages and only alter it if it's the main query
   	if (!is_admin() && $query->is_main_query()){
 
-		if(is_category()){
-			$query->set('posts_per_page', 8);
-		}
+		$query->set('posts_per_page', 8);
 
 	}
 }
@@ -167,6 +165,29 @@ function BaseBreadcrumb() {
         echo '</div>';
 }
 
+function BaseBreadcrumbDec() {
+	global $post;
+
+    echo '<div class="basebreadcrumb">';
+    if (!is_home()) {
+        echo '<a href="'. esc_url(home_url('/')) .'">';
+        echo 'Home';
+        echo "</a> / ";
+        if (is_category() || is_single()) {
+            $categories = get_the_terms( $post, 'categoria_decoracao' );
+            foreach($categories as $category){
+            	echo '<a href="'.esc_url( home_url( '/' ).'categoria-decoracao/'.$category->slug).'">'.$category->name."</a> / ";
+            }
+            if (is_single()) {
+                the_title();
+            }
+        } elseif (is_page()) {
+            echo the_title();
+        }
+    }
+        echo '</div>';
+}
+
 function categoryIds(){
 	if(has_category()){
 		$categories = get_the_category();
@@ -176,6 +197,19 @@ function categoryIds(){
 		}
 		return $ids;
 	}	
+}
+
+function categoryIdsDec(){
+	global $post;
+
+	$categories = get_the_terms( $post, 'categoria_decoracao' );
+
+	$ids = array();
+	foreach($categories as $category){
+		$ids[] = $category->term_id;
+	}
+	return $ids;
+	
 }
 
 function categoryList(){
@@ -232,51 +266,116 @@ function change_post_object_label() {
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
 
-	function register_post_type_blog(){
-		$singular = 'Blog Post';
-		$plural = 'Blog Posts';
-		$labels = array(
-			'name' => $plural,
-			'singular_name' => $singular,
-			'add_new_item' => 'Adicionar novo '.$singular,
-			);
-		$args = array(
-			'labels' => $labels,
-			'public' => true,
-	        'supports' => array('title', 'editor','thumbnail'),
-	        'menu_position' => 5
-			);
+function register_post_type_blog(){
+	$singular = 'Blog Post';
+	$plural = 'Blog Posts';
+	$labels = array(
+		'name' => $plural,
+		'singular_name' => $singular,
+		'add_new_item' => 'Adicionar novo '.$singular,
+		);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+        'supports' => array('title', 'editor','thumbnail'),
+        'menu_position' => 5
+		);
 
-		register_post_type('blog',$args);
-	}
-	add_action(	'init','register_post_type_blog');
-	flush_rewrite_rules();
-	function register_taxonomy_categoria(){
-	    $labels = array(
-	        'name'              => _x( 'Categoria', 'taxonomy general name' ),
-	        'singular_name'     => _x( 'Categorias', 'taxonomy singular name' ),
-	        'search_items'      => __( 'Procurar Categoria' ),
-	        'all_items'         => __( 'Todas Categorias' ),
-	        'parent_item'       => __( 'Parent Course' ),
-	        'parent_item_colon' => __( 'Parent Course:' ),
-	        'edit_item'         => __( 'Editar Categoria' ),
-	        'update_item'       => __( 'Atualizar Categoria' ),
-	        'add_new_item'      => __( 'Adicionar Categoria' ),
-	        'new_item_name'     => __( 'Nome Nova Categoria' ),
-	        'menu_name'         => __( 'Categoria' ),
-	    );
-	 
-	    $args = array(
-	        'hierarchical'      => true,
-	        'labels'            => $labels,
-	        'show_ui'           => true,
-	        'show_admin_column' => true,
-	        'query_var'         => true,
-	        'rewrite'           => array( 'slug' => 'categoria-blog' ),
-	    );
-		register_taxonomy( 'categoria_blog', 'blog', $args );
-	}
-	add_action('init','register_taxonomy_categoria');
+	register_post_type('blog',$args);
+}
+add_action(	'init','register_post_type_blog');
+flush_rewrite_rules();
+function register_taxonomy_categoria_blog(){
+    $labels = array(
+        'name'              => _x( 'Categoria', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Categorias', 'taxonomy singular name' ),
+        'search_items'      => __( 'Procurar Categoria' ),
+        'all_items'         => __( 'Todas Categorias' ),
+        'parent_item'       => __( 'Parent Course' ),
+        'parent_item_colon' => __( 'Parent Course:' ),
+        'edit_item'         => __( 'Editar Categoria' ),
+        'update_item'       => __( 'Atualizar Categoria' ),
+        'add_new_item'      => __( 'Adicionar Categoria' ),
+        'new_item_name'     => __( 'Nome Nova Categoria' ),
+        'menu_name'         => __( 'Categoria' ),
+    );
+ 
+    $args = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array( 'slug' => 'categoria-blog' ),
+    );
+	register_taxonomy( 'categoria_blog', 'blog', $args );
+}
+add_action('init','register_taxonomy_categoria_blog');
+
+function register_post_type_decoracao(){
+	$singular = 'Decoração';
+	$plural = 'Decorações';
+	$labels = array(
+		'name' => $plural,
+		'singular_name' => $singular,
+		'add_new_item' => 'Adicionar novo '.$singular,
+		);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+        'supports' => array('title', 'editor','thumbnail'),
+        'menu_position' => 5
+		);
+
+	register_post_type('decoracao',$args);
+}
+add_action(	'init','register_post_type_decoracao');
+flush_rewrite_rules();
+function register_taxonomy_categoria_decoracao(){
+    $labels = array(
+        'name'              => _x( 'Categoria', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Categorias', 'taxonomy singular name' ),
+        'search_items'      => __( 'Procurar Categoria' ),
+        'all_items'         => __( 'Todas Categorias' ),
+        'parent_item'       => __( 'Parent Course' ),
+        'parent_item_colon' => __( 'Parent Course:' ),
+        'edit_item'         => __( 'Editar Categoria' ),
+        'update_item'       => __( 'Atualizar Categoria' ),
+        'add_new_item'      => __( 'Adicionar Categoria' ),
+        'new_item_name'     => __( 'Nome Nova Categoria' ),
+        'menu_name'         => __( 'Categoria' ),
+    );
+ 
+    $args = array(
+        'hierarchical'      => true,
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => array( 'slug' => 'categoria-decoracao' ),
+    );
+	register_taxonomy( 'categoria_decoracao', 'decoracao', $args );
+}
+add_action('init','register_taxonomy_categoria_decoracao');
+
+function register_post_type_servico(){
+	$singular = 'Serviço';
+	$plural = 'Serviços';
+	$labels = array(
+		'name' => $plural,
+		'singular_name' => $singular,
+		'add_new_item' => 'Adicionar novo '.$singular,
+		);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+        'supports' => array('title', 'editor','thumbnail'),
+        'menu_position' => 5
+		);
+
+	register_post_type('servico',$args);
+}
+add_action(	'init','register_post_type_servico');
 
 
 /**

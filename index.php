@@ -55,10 +55,10 @@ get_header(); ?>
 				<div class="col-md-6 info-right">
 					<div class="info-content">
 						<h1 style="display:none" class="efeitoc">NOBRE ARTE DESIGN</h1><br>
-						<h5 style="display:none" class="efeitoc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali</h5><br>
-						<p style="display:none" class="efeitoc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna alio.</p>
-						<p style="display:none" class="efeitoc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.</p>
-						<p style="display:none" class="efeitoc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali.</p>
+						<h5 style="display:none" class="efeitoc">A Nobre Arte Design nasceu pelo esforço e vontade de 3 profissionais com vasta experiência no mercado de tapeçaria, decoração e design de interiores.</h5><br>
+						<p style="display:none" class="efeitoc">Nós temos como missão principal buscar e apresentar aos clientes produtos de alta qualidade, serviços e atendimento de excelência e soluções inovadoras para a decoração do seu ambiente, visando a satisfação e o bem estar.</p>
+						<p style="display:none" class="efeitoc">A Nobre Arte Design tem como visão de futuro ser referência em qualidade e atendimento no mercado de estofados, tapeçaria e artigos para decoração e design de interiores. </p>
+						<p style="display:none" class="efeitoc">Nossas atividades e serviços são baseados em valores como respeito, pontualidade, atendimento diferenciado, ética, sustentabilidade, transparência, responsabilidade e qualidade.</p>
 					</div>
 				</div>			
 			</div>
@@ -104,7 +104,25 @@ get_header(); ?>
 			<div class="row links">
 				<div class="col-md-12">
 					<div class="content clearfix">
-						<span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span><span>almofadas</span>
+						<span>almofadas</span>
+						<span><strong>cadeiras</strong></span>
+						<span>poltronas</span>
+						<span><strong>cabeceiras de cama</strong></span>
+						<span>persianas</span>
+						<span><strong>sofás</strong></span>
+						<span>tecidos</span>
+						<span><strong>sofás sob medida</strong></span>
+						<span>futoons</span>
+						<span><strong>puffs</strong></span>
+						<span>tapetes</span>
+						<span><strong>mesas</strong></span>
+						<span>reforma de estofados</span>
+						<span><strong>nobre arte design</strong></span>
+						<span>nobre arte</span>
+						<span><strong>cortinas</strong></span>
+						<span>lavagem de estofados</span>
+						<span><strong>impermeabilização</strong></span>
+						<span>projetos personalizados</span>
 					</div>
 				</div>
 			</div>

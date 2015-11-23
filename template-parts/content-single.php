@@ -15,7 +15,7 @@
 			)); ?>
 		<?php } ?>
 		
-		<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+		<?php the_title( '<h1 class="small">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

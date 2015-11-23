@@ -9,7 +9,7 @@ get_header('blog'); ?>
 					<?php putRevSlider( "banner-blog" ) ?>
 				</div>
 				<div class="col-md-4">
-					<?php putRevSlider( "publicidade2" ) ?>
+					<?php putRevSlider( "publicidade1" ) ?>
 				</div>
 			</div><br><br>
 			<div class="row">

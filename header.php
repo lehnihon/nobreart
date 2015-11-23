@@ -43,28 +43,82 @@
 			<nav class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="btn-group botao-menu-responsivo">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="#">A EMPRESA</a></li>
-								<li><a href="#">PRODUTOS</a></li>
-								<li><a href="#">DECORAÇÃO</a></li>
-								<li><a href="#">SERVIÇOS</a></li>
-								<li><a href="#">LOCALIZAÇÃO</a></li>
-								<li><a href="#">BLOG</a></li>
-								<li><a href="#">CONTATO</a></li>
-							</ul>
-						</div>
+						<ul class="btn-group botao-menu-responsivo">
+							<li class="item">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="<?php echo esc_url( home_url( '/' )."sobre"); ?>">A EMPRESA</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/' )."servicos"); ?>">SERVIÇOS</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/' )."localizacao"); ?>">LOCALIZAÇÃO</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/' )."blog"); ?>">BLOG</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/' )."contato"); ?>">CONTATO</a></li>
+								</ul>								
+							</li>
+							<li class="item">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									PRODUTOS
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<?php 
+									$categories = get_categories( );
+									foreach($categories as $category):
+									?>
+										<li><a href="<?php echo esc_url( home_url( '/' ).'categoria/'.$category->slug); ?>"><?php echo $category->name; ?></a></li>
+									<?php endforeach; ?>
+								</ul>
+							</li>
+							<li class="item">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									DECORAÇÃO
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<?php 
+									$categories = get_terms( 'categoria_decoracao' );
+									foreach($categories as $category):
+									?>
+										<li><a href="<?php echo esc_url( home_url( '/' ).'categoria-decoracao/'.$category->slug); ?>"><?php echo $category->name; ?></a></li>
+									<?php endforeach; ?>
+								</ul>
+							</li>
+						</ul>
 						<ul class="menu-princ">
-							<li><a href="#">A EMPRESA</a></li>
-							<li><a href="#">PRODUTOS</a></li>
-							<li><a href="#">DECORAÇÃO</a></li>
-							<li><a href="#">SERVIÇOS</a></li>
-							<li><a href="#">LOCALIZAÇÃO</a></li>
-							<li><a href="#">BLOG</a></li>
-							<li><a href="#">CONTATO</a></li>
+							<li class="item"><a href="<?php echo esc_url( home_url( '/' )."sobre"); ?>">A EMPRESA</a></li>
+							<li class="item">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									PRODUTOS
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<?php 
+									$categories = get_categories( );
+									foreach($categories as $category):
+									?>
+										<li><a href="<?php echo esc_url( home_url( '/' ).'categoria/'.$category->slug); ?>"><?php echo $category->name; ?></a></li>
+									<?php endforeach; ?>
+								</ul>
+							</li>
+							<li class="item">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									DECORAÇÃO
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<?php 
+									$categories = get_terms( 'categoria_decoracao' );
+									foreach($categories as $category):
+									?>
+										<li><a href="<?php echo esc_url( home_url( '/' ).'categoria-decoracao/'.$category->slug); ?>"><?php echo $category->name; ?></a></li>
+									<?php endforeach; ?>
+								</ul>								
+							</li>
+							<li class="item"><a href="<?php echo esc_url( home_url( '/' )."servicos"); ?>">SERVIÇOS</a></li>
+							<li class="item"><a href="<?php echo esc_url( home_url( '/' )."localizacao"); ?>">LOCALIZAÇÃO</a></li>
+							<li class="item"><a href="<?php echo esc_url( home_url( '/' )."blog"); ?>">BLOG</a></li>
+							<li class="item"><a href="<?php echo esc_url( home_url( '/' )."contato"); ?>">CONTATO</a></li>
 						</ul>						
 					</div>
 				</div>

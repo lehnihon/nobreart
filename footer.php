@@ -5,25 +5,47 @@
 					<div class="col-md-4">
 						<p>
 							<strong>Sobre a Arte Nobre Design.</strong><br><br>
-							O Hotel Beach Hills fica localizado na bela praia de Taperapuã, a 6 km do centro histórico de Porto Seguro, o hotel oferece uma grande piscina rodeada por jardins, um restaurante regional, WIFI e quartos com varanda.
+				A Nobre Arte Design nasceu pelo esforço e vontade de 3 profissionais com vasta experiência no mercado de tapeçaria, decoração e design de interiores.
+				<br>Nós temos como missão principal buscar e apresentar aos clientes produtos de alta qualidade, serviços e atendimento de excelência e soluções inovadoras para a decoração do seu ambiente, visando a satisfação e o bem estar.
+				<br>A Nobre Arte Design tem como visão de futuro ser referência em qualidade e atendimento no mercado de estofados, tapeçaria e artigos para decoração e design de interiores. 
+				<br>Nossas atividades e serviços são baseados em valores como respeito, pontualidade, atendimento diferenciado, ética, sustentabilidade, transparência, responsabilidade e qualidade.											
 						</p>
 					</div>
 					<div class="col-md-2 col-md-offset-1">
 						<strong>Institucional</strong><br><br>
 						<ul>
-							<li><a href="<?php echo esc_url( home_url( '/' ))."hotel/"; ?>">A Empresa</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Contato</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ))."sobre"; ?>">A Empresa</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao"; ?>">Localização</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ))."contato"; ?>">Contato</a></li>
 						</ul><br><br>
 						<strong>Serviços</strong><br><br>
 						<ul>
-							<li><a href="<?php echo esc_url( home_url( '/' ))."hotel/"; ?>">lista</a></li>
+							<?php
+							$args = array(
+								'post_type' => 'servico',
+								'posts_per_page' => 8,
+							    'orderby' => 'rand');
+							$query = new WP_Query( $args );
+
+							while ( $query->have_posts() ) : $query->the_post(); 
+							?>
+								<li><a href="<?php the_permalink(); ?>"><?php the_title( );?></a></li>
+							<?php endwhile; ?>
 						</ul>						
 					</div>
 					<div class="col-md-2">
 						<strong>Produtos</strong><br><br>
 						<ul>
-							<li><a href="<?php echo esc_url( home_url( '/' ))."hotel/"; ?>">lista</a></li>
+							<?php
+							$args = array(
+								'posts_per_page' => 8,
+							    'orderby' => 'rand');
+							$query = new WP_Query( $args );
+
+							while ( $query->have_posts() ) : $query->the_post(); 
+							?>
+								<li><a href="<?php the_permalink(); ?>"><?php the_title( );?></a></li>
+							<?php endwhile; ?>
 						</ul>
 					</div>
 					<div class="col-md-3">

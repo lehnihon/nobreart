@@ -1,45 +1,51 @@
 <?php
 /**
- * The template for displaying search results pages.
+ * The template for displaying archive pages.
+ *
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package site
  */
 
-get_header(); ?>
+get_header('blog'); ?>
+<div id="content">
+	<section id="search">
+		<div class="container">
+			<?php if ( have_posts() ) : ?>
+				<header class="page-header">
+					<h1 class="small page-title"><?php printf( esc_html__( 'Resultados da procura por: %s', 'site' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				</header><!-- .page-header -->
+				<div class="row">	
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php get_template_part( 'template-parts/content', 'search' ); ?>
+					<?php endwhile; ?>										
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="paginacao">
+						<?php
+						$big = 999999999; // need an unlikely integer
+						echo paginate_links( array(
+							'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+							'format' => '?paged=%#%',
+							'current' => max( 1, get_query_var('paged') ),
+							'total' => $wp_query->max_num_pages
+						) );
+						?>
+						</div>
+					</div>
+				</div>
+			<?php else : ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php if ( have_posts() ) : ?>
+			<?php endif; ?>
+		</div>
+	</section>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'site' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+	<?php get_template_part( 'template-parts/redes-bot'); ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+</div>
 
-				<?php
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
+

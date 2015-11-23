@@ -97,6 +97,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		} 		
 	}
 
+	div.paginacao{
+		margin-top: 50px;
+		.page-numbers{
+			padding:5px;
+			background-color:#ececec;
+		}
+		.current{
+			background-color:#ffc700;
+		}
+	}
+
 	@import 'header';
 	@import 'content';
 	@import 'footer';

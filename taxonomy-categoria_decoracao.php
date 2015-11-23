@@ -9,15 +9,23 @@
 
 get_header(); ?>
 <div id="content">
-	<section id="search">
+	<section id="categorias">
 		<div class="container">
 			<?php if ( have_posts() ) : ?>
-				<header class="page-header">
-					<h1 class="small page-title"><?php printf( esc_html__( 'Resultados da procura por: %s', 'site' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-				</header><!-- .page-header -->
+				<h1 class="small"><?php single_cat_title(); ?></h1>
+				<h5>Conheça as decorações da Nobre Arte Design.</h5><br><br>
 				<div class="row">	
 					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'template-parts/content', 'search' ); ?>
+						<div class="col-md-3">
+							<article>
+								<strong><?php the_title(); ?></strong><br><br>
+								<?php the_post_thumbnail('home-thumb', array('class' => "img-responsive e-cinza")); ?>
+								<a href="<?php the_permalink(); ?>">Saiba Mais</a>
+							</article>
+						</div>
+						<?php if($wp_query->current_post == 3): ?>
+							</div><br><div class="row">
+						<?php endif; ?>		
 					<?php endwhile; ?>										
 				</div>
 				<div class="row">
@@ -35,13 +43,11 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-			<?php else : ?>
-
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 			<?php endif; ?>
 		</div>
 	</section>
+
+	<?php get_template_part( 'template-parts/newsletter'); ?>
 
 	<?php get_template_part( 'template-parts/redes-bot'); ?>
 

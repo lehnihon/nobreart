@@ -87,39 +87,49 @@
 	div.back-yellow{
 		background-color:#ffe800;
 		nav.container{	
-            div.botao-menu-responsivo{
-                float: left;
-                margin: 10px; 
+            ul.botao-menu-responsivo{
+            	width: 100%;
+				margin-bottom: 0;
+				padding-left:0;
+				li.item{
+					float: left;
+					list-style-type: none;
+					width: 33.3%;
+					position: relative;
+				    min-height: 1px;
+				    padding: 15px 0;
 
-                .dropdown-menu{
-                    li{
-                        width: 100%;
-                        a{
-                            width: 100%;
-                            color:#606060;
-                            padding:15px;
-                        }
-                        a:hover{
-                            background-color:#f0f2f4;
-                        }
-                        a.ativob{
-                             background-color:#f0f2f4;
-                        }
-                    }
-                }
+				    button.btn-default{
+				    	background-color:transparent;
+				    	border:0;
+				    	padding:0;
+				    }
+				}
+				li.item:hover{
+					background-color:#fff166;
+				}
+
+                
+                
             }
 			ul.menu-princ{
 				margin-bottom: 0;
 				padding-left:0;
-				li{
+				li.item{
 					float: left;
 					list-style-type: none;
 					width: 14.2%;
 					position: relative;
 				    min-height: 1px;
 				    padding: 15px;
+
+				    button.btn-default{
+				    	background-color:transparent;
+				    	border:0;
+				    	padding:0;
+				    }
 				}
-				li:hover{
+				li.item:hover{
 					background-color:#fff166;
 				}
 			}	     	
