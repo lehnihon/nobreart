@@ -6,9 +6,9 @@
 						<p>
 							<strong>Sobre a Arte Nobre Design.</strong><br><br>
 				A Nobre Arte Design nasceu pelo esforço e vontade de 3 profissionais com vasta experiência no mercado de tapeçaria, decoração e design de interiores.
-				<br>Nós temos como missão principal buscar e apresentar aos clientes produtos de alta qualidade, serviços e atendimento de excelência e soluções inovadoras para a decoração do seu ambiente, visando a satisfação e o bem estar.
-				<br>A Nobre Arte Design tem como visão de futuro ser referência em qualidade e atendimento no mercado de estofados, tapeçaria e artigos para decoração e design de interiores. 
-				<br>Nossas atividades e serviços são baseados em valores como respeito, pontualidade, atendimento diferenciado, ética, sustentabilidade, transparência, responsabilidade e qualidade.											
+				<br><br>Nós temos como missão principal buscar e apresentar aos clientes produtos de alta qualidade, serviços e atendimento de excelência e soluções inovadoras para a decoração do seu ambiente, visando a satisfação e o bem estar.
+				<br><br>A Nobre Arte Design tem como visão de futuro ser referência em qualidade e atendimento no mercado de estofados, tapeçaria e artigos para decoração e design de interiores. 
+				<br><br>Nossas atividades e serviços são baseados em valores como respeito, pontualidade, atendimento diferenciado, ética, sustentabilidade, transparência, responsabilidade e qualidade.											
 						</p>
 					</div>
 					<div class="col-md-2 col-md-offset-1">

@@ -11,18 +11,10 @@ get_header('sem-banner'); ?>
 					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 6 ); } ?>
 				</div>
 				<div class="col-md-6 text-left">
-					<p><strong>Unidade Tatuapé</strong> </p>
-					<p>Rua Coelho Lisboa, 675 - Tatuapé</p>
-					<p>São Paulo - SP</p>
-					<p>11 3232-1732</p><br>
-					<p><strong>Unidade Santa Clara</strong> </p>
-					<p>Rua Buenópolis, 134 - Santa Clara</p>
-					<p>São Paulo - SP</p>
-					<p>11 3554-7555</p><br>
-					<p><strong>Reclamações Unidade Tatuapé</strong> </p>
-					<p>atendimento1@xtremegoldteam.com.br</p>
-					<br><p><strong>Reclamações Unidade Santa Clara</strong> </p>
-					<p>atendimento2@xtremegoldteam.com.br</p>
+					<p><strong>Localização</strong> </p>
+					<p>Rua São Jorge, 86 - Tatuapé, São Paulo</p>
+					<p>011 3938-0200</p>
+					<p>contato@nobreartedesign.com.br</p>				
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->
