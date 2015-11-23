@@ -120,7 +120,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 8, _header.scss */
 #page #header div.back-black div.container div {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 /* line 10, _header.scss */
 #page #header div.back-black div.container div div.header-logo {
@@ -136,11 +136,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 20, _header.scss */
 #page #header div.back-black div.container div div.header-busca input.pesquisar-input {
-  padding: 10px;
+  padding: 12px;
   vertical-align: top;
   margin-right: 2px;
+  border: 0;
 }
-/* line 26, _header.scss */
+/* line 27, _header.scss */
 #page #header div.back-black div.container div div.header-busca .redes_sociais_header {
   margin-top: 10px;
   margin-bottom: 5px;
@@ -150,19 +151,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: right;
   padding-left: 10px;
 }
-/* line 36, _header.scss */
+/* line 37, _header.scss */
 #page #header div.back-black div.container div div.header-busca .redes_sociais_header li:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
   /* For IE8 and earlier */
 }
-/* line 41, _header.scss */
+/* line 42, _header.scss */
 #page #header div.back-black div.container div div.header-busca .redes_sociais_header a {
   display: inline-block;
   width: 31px;
   height: 31px;
 }
-/* line 47, _header.scss */
+/* line 48, _header.scss */
 #page #header div.back-black div.container div div.header-busca .redes_sociais_header .youtube {
   background-image: url("images/redes-header.png");
   background-position: 0px,center;
@@ -171,7 +172,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 31px;
   display: inline-block;
 }
-/* line 56, _header.scss */
+/* line 57, _header.scss */
 #page #header div.back-black div.container div div.header-busca .redes_sociais_header .instagram {
   background-image: url("images/redes-header.png");
   background-position: -35px,center;
@@ -180,7 +181,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 31px;
   display: inline-block;
 }
-/* line 65, _header.scss */
+/* line 66, _header.scss */
 #page #header div.back-black div.container div div.header-busca .redes_sociais_header .twitter {
   background-image: url("images/redes-header.png");
   background-position: -70px,center;
@@ -189,7 +190,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 31px;
   display: inline-block;
 }
-/* line 74, _header.scss */
+/* line 75, _header.scss */
 #page #header div.back-black div.container div div.header-busca .redes_sociais_header .facebook {
   background-image: url("images/redes-header.png");
   background-position: -105px,center;
@@ -198,17 +199,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 31px;
   display: inline-block;
 }
-/* line 87, _header.scss */
+/* line 88, _header.scss */
 #page #header div.back-yellow {
   background-color: #ffe800;
 }
-/* line 90, _header.scss */
+/* line 91, _header.scss */
 #page #header div.back-yellow nav.container ul.botao-menu-responsivo {
   width: 100%;
   margin-bottom: 0;
   padding-left: 0;
 }
-/* line 94, _header.scss */
+/* line 95, _header.scss */
 #page #header div.back-yellow nav.container ul.botao-menu-responsivo li.item {
   float: left;
   list-style-type: none;
@@ -217,22 +218,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   min-height: 1px;
   padding: 15px 0;
 }
-/* line 102, _header.scss */
+/* line 103, _header.scss */
 #page #header div.back-yellow nav.container ul.botao-menu-responsivo li.item button.btn-default {
   background-color: transparent;
   border: 0;
   padding: 0;
 }
-/* line 108, _header.scss */
+/* line 109, _header.scss */
 #page #header div.back-yellow nav.container ul.botao-menu-responsivo li.item:hover {
   background-color: #fff166;
 }
-/* line 115, _header.scss */
+/* line 116, _header.scss */
 #page #header div.back-yellow nav.container ul.menu-princ {
   margin-bottom: 0;
   padding-left: 0;
 }
-/* line 118, _header.scss */
+/* line 119, _header.scss */
 #page #header div.back-yellow nav.container ul.menu-princ li.item {
   float: left;
   list-style-type: none;
@@ -241,45 +242,46 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   min-height: 1px;
   padding: 15px;
 }
-/* line 126, _header.scss */
+/* line 127, _header.scss */
 #page #header div.back-yellow nav.container ul.menu-princ li.item button.btn-default {
   background-color: transparent;
   border: 0;
   padding: 0;
 }
-/* line 132, _header.scss */
+/* line 133, _header.scss */
 #page #header div.back-yellow nav.container ul.menu-princ li.item:hover {
   background-color: #fff166;
 }
-/* line 141, _header.scss */
+/* line 142, _header.scss */
 #page #header-blog {
   border-top: 5px solid #ffe800;
   background-color: #010101;
   margin-bottom: 10px;
 }
-/* line 148, _header.scss */
+/* line 149, _header.scss */
 #page #header-blog div.back-black div.container div {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
-/* line 150, _header.scss */
+/* line 151, _header.scss */
 #page #header-blog div.back-black div.container div div.header-logo {
   text-align: left;
 }
-/* line 153, _header.scss */
+/* line 154, _header.scss */
 #page #header-blog div.back-black div.container div div.header-busca {
   padding: 25px 0;
 }
-/* line 156, _header.scss */
+/* line 157, _header.scss */
 #page #header-blog div.back-black div.container div div.header-busca form.search-form {
   text-align: right;
 }
-/* line 160, _header.scss */
+/* line 161, _header.scss */
 #page #header-blog div.back-black div.container div div.header-busca input.pesquisar-input {
-  padding: 10px;
+  padding: 12px;
   vertical-align: top;
   margin-right: 2px;
+  border: 0;
 }
-/* line 166, _header.scss */
+/* line 169, _header.scss */
 #page #header-blog div.back-black div.container div div.header-busca .redes_sociais_header {
   margin-top: 10px;
   margin-bottom: 5px;
@@ -289,19 +291,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: right;
   padding-left: 10px;
 }
-/* line 176, _header.scss */
+/* line 179, _header.scss */
 #page #header-blog div.back-black div.container div div.header-busca .redes_sociais_header li:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
   /* For IE8 and earlier */
 }
-/* line 181, _header.scss */
+/* line 184, _header.scss */
 #page #header-blog div.back-black div.container div div.header-busca .redes_sociais_header a {
   display: inline-block;
   width: 31px;
   height: 31px;
 }
-/* line 187, _header.scss */
+/* line 190, _header.scss */
 #page #header-blog div.back-black div.container div div.header-busca .redes_sociais_header .youtube {
   background-image: url("images/redes-header.png");
   background-position: 0px,center;
@@ -310,7 +312,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 31px;
   display: inline-block;
 }
-/* line 196, _header.scss */
+/* line 199, _header.scss */
 #page #header-blog div.back-black div.container div div.header-busca .redes_sociais_header .instagram {
   background-image: url("images/redes-header.png");
   background-position: -35px,center;
@@ -319,7 +321,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 31px;
   display: inline-block;
 }
-/* line 205, _header.scss */
+/* line 208, _header.scss */
 #page #header-blog div.back-black div.container div div.header-busca .redes_sociais_header .twitter {
   background-image: url("images/redes-header.png");
   background-position: -70px,center;
@@ -328,7 +330,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 31px;
   display: inline-block;
 }
-/* line 214, _header.scss */
+/* line 217, _header.scss */
 #page #header-blog div.back-black div.container div div.header-busca .redes_sociais_header .facebook {
   background-image: url("images/redes-header.png");
   background-position: -105px,center;
@@ -337,21 +339,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 31px;
   display: inline-block;
 }
-/* line 227, _header.scss */
+/* line 230, _header.scss */
 #page #header-blog div.back-yellow {
   background-color: #ffe800;
   height: 10px;
 }
-/* line 231, _header.scss */
+/* line 234, _header.scss */
 #page #header-blog div.menu-blog {
   background-color: white;
 }
-/* line 234, _header.scss */
+/* line 237, _header.scss */
 #page #header-blog div.menu-blog nav.container ul {
   margin-bottom: 0;
   padding-left: 0;
 }
-/* line 237, _header.scss */
+/* line 240, _header.scss */
 #page #header-blog div.menu-blog nav.container ul li {
   float: left;
   list-style-type: none;
@@ -360,38 +362,38 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   min-height: 1px;
   padding: 15px;
 }
-/* line 245, _header.scss */
+/* line 248, _header.scss */
 #page #header-blog div.menu-blog nav.container ul li a {
   font-weight: bold;
 }
-/* line 248, _header.scss */
+/* line 251, _header.scss */
 #page #header-blog div.menu-blog nav.container ul li a:hover {
   color: #fff166;
 }
 @media (max-width: 991px) {
-  /* line 257, _header.scss */
+  /* line 260, _header.scss */
   #page .redes_sociais_header {
     float: left !important;
   }
-  /* line 261, _header.scss */
+  /* line 264, _header.scss */
   #page .botao-menu-responsivo {
     display: inline-block;
   }
-  /* line 265, _header.scss */
+  /* line 268, _header.scss */
   #page ul.menu-princ {
     display: none;
   }
-  /* line 269, _header.scss */
+  /* line 272, _header.scss */
   #page form.search-form {
     text-align: left !important;
   }
-  /* line 273, _header.scss */
+  /* line 276, _header.scss */
   #page div.header-busca {
     padding: 0 !important;
   }
 }
 @media (min-width: 992px) {
-  /* line 282, _header.scss */
+  /* line 285, _header.scss */
   #page .botao-menu-responsivo {
     display: none;
   }
