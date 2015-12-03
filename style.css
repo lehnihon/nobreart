@@ -648,10 +648,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 #page #content section#produto-single article div.slider1 {
   margin-top: 10px;
 }
-/* line 249, _content.scss */
-#page #content section#produto-single article div.wrap {
-  padding-left: 40px;
-}
 /* line 251, _content.scss */
 #page #content section#produto-single article div.wrap h5 {
   font-style: italic;
