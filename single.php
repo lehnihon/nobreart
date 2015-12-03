@@ -33,7 +33,7 @@ get_header(); ?>
 							<div class="wrap">
 								<h1 class="small"><?php the_title(); ?></h1>
 								<h5><?php categoryList(); ?></h5>
-								<div class="content"><?php echo strip_shortcodes(get_the_content()); ?></div>
+								<div class="content"><?php echo strip_shortcodes(wpautop( get_the_content() )); ?></div>
 							</div>
 						</div>	
 					<?php endwhile; ?>										
