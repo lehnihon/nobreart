@@ -52,7 +52,7 @@
 									<li><a href="<?php echo esc_url( home_url( '/' )."sobre"); ?>">A EMPRESA</a></li>
 									<li><a href="<?php echo esc_url( home_url( '/' )."servicos"); ?>">SERVIÇOS</a></li>
 									<li><a href="<?php echo esc_url( home_url( '/' )."localizacao"); ?>">LOCALIZAÇÃO</a></li>
-									<li><a href="<?php echo esc_url( home_url( '/' )."blog"); ?>">BLOG</a></li>
+									<li><a target="_blank" href="<?php echo esc_url( home_url( '/' )."blog"); ?>">BLOG</a></li>
 									<li><a href="<?php echo esc_url( home_url( '/' )."contato"); ?>">CONTATO</a></li>
 								</ul>								
 							</li>
