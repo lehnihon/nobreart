@@ -13,7 +13,6 @@
 				padding:5px; 
 				background-color:#ffe800; 
 				color:#606060;	
-				display: none;
 				font-weight: bold;
 			}
 			img:hover{
@@ -72,7 +71,22 @@
 
 			div.news-left{
 				background-color:#bdbdbd;
-				padding:50px;
+				padding:50px 0;
+
+				img{
+					float:left;
+				}
+				span.textoa{
+					float:left;
+					color:white;
+					margin-left:10px;
+				}
+				span.textob{
+					float:left;
+					color:white;
+					margin-left:10px;
+					font-weight:bold;
+				}
 
 			}
 			div.news-right{
@@ -94,7 +108,8 @@
 				input[type="submit"]{
 					background-color:#ffe800;
 					border:0;
-					color:white;
+					color: #4e67cf;
+					font-weight:bold;
 					font-weight: bold;
 				}
 				input[type="submit"]:hover{
@@ -119,7 +134,6 @@
 				padding:5px; 
 				background-color:#ffe800; 
 				color:#606060;	
-				display: none;
 				font-weight: bold;
 			}
 			img:hover{

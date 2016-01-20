@@ -108,13 +108,9 @@ get_header(); ?>
 						<span><strong>cadeiras</strong></span>
 						<span>poltronas</span>
 						<span><strong>cabeceiras de cama</strong></span>
-						<span>persianas</span>
-						<span><strong>sofás</strong></span>
-						<span>tecidos</span>
+						<span>sofás</span>
 						<span><strong>sofás sob medida</strong></span>
-						<span>futoons</span>
-						<span><strong>puffs</strong></span>
-						<span>tapetes</span>
+						<span>puffs</span>
 						<span><strong>mesas</strong></span>
 						<span>reforma de estofados</span>
 						<span><strong>nobre arte design</strong></span>

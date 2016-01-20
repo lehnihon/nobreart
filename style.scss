@@ -108,6 +108,46 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		}
 	}
 
+	.btn-receba{ 
+		background-color: #fff40e;
+		color: #4e67cf;
+		font-weight:bold;
+		padding:5px 25px;
+		border:0;
+	}
+	.btn-receba:hover{
+		background-color:#fff86e;
+	}
+	.input-receba-wrap{
+		margin-bottom: 5px;
+		color:#606060;
+	}
+	.input-receba{
+		border:0;
+		padding:5px
+	}	
+
+	.contato-enviar{
+		background-color:#ffd900;
+		border:0;
+		padding:10px 20px;
+		font-weight: bold;
+	}
+	.contato-enviar:hover{
+		background-color:#ffe866;
+	}
+
+	.contato-input {
+		border: 1px solid #909090;
+	    padding: 5px;
+	}
+	
+	.contato-input-mgs{
+	  border: 1px solid #909090;
+	  padding: 5px;		
+	  height: 80px;
+	}
+
 	@import 'header';
 	@import 'content';
 	@import 'footer';

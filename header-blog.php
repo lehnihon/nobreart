@@ -32,7 +32,7 @@
 										<li class="youtube"><a target="_blank" href="#"></a></li>
 										<li class="instagram"><a target="_blank" href="#"></a></li>
 										<li class="twitter"><a target="_blank" href="#"></a></li>
-										<li class="facebook"><a target="_blank" href="#"></a></li>
+										<li class="facebook"><a target="_blank" href="https://www.facebook.com/nobreartedesign/?fref=ts"></a></li>
 									</ul>									
 								</div>	
 							</div><br>

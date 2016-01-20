@@ -139,7 +139,7 @@ function my_post_queries( $query ) {
   	// do not alter the query on wp-admin pages and only alter it if it's the main query
   	if (!is_admin() && $query->is_main_query()){
 
-		$query->set('posts_per_page', 8);
+		$query->set('posts_per_page', 16);
 
 	}
 }

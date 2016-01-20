@@ -5,9 +5,7 @@
 					<div class="col-md-4">
 						<p>
 							<strong>Sobre a Arte Nobre Design.</strong><br><br>
-				A Nobre Arte Design nasceu pelo esforço e vontade de 3 profissionais com vasta experiência no mercado de tapeçaria, decoração e design de interiores.
-				<br><br>Nós temos como missão principal buscar e apresentar aos clientes produtos de alta qualidade, serviços e atendimento de excelência e soluções inovadoras para a decoração do seu ambiente, visando a satisfação e o bem estar.
-				<br><br>A Nobre Arte Design tem como visão de futuro ser referência em qualidade e atendimento no mercado de estofados, tapeçaria e artigos para decoração e design de interiores. 
+				A Nobre Arte Design tem como visão de futuro ser referência em qualidade e atendimento no mercado de estofados, tapeçaria e artigos para decoração e design de interiores. 
 				<br><br>Nossas atividades e serviços são baseados em valores como respeito, pontualidade, atendimento diferenciado, ética, sustentabilidade, transparência, responsabilidade e qualidade.											
 						</p>
 					</div>
@@ -37,19 +35,17 @@
 						<strong>Produtos</strong><br><br>
 						<ul>
 							<?php
-							$args = array(
-								'posts_per_page' => 8,
-							    'orderby' => 'rand');
-							$query = new WP_Query( $args );
+							$categories = get_categories( );
 
-							while ( $query->have_posts() ) : $query->the_post(); 
+							foreach($categories as $category):
 							?>
-								<li><a href="<?php the_permalink(); ?>"><?php the_title( );?></a></li>
-							<?php endwhile; ?>
+								<li><a href="<?php echo esc_url( home_url( '/' ).'categoria/'.$category->slug); ?>"><?php echo $category->name; ?></a></li>
+							<?php endforeach; ?>
 						</ul>
 					</div>
 					<div class="col-md-3">
-						<strong>Receba nossas novidades</strong>
+						<strong>Receba nossas novidades</strong><br/><br/>	
+						<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 8 ); } ?>
 					</div>
 				</div><!-- .row -->
 			</div><!-- .container -->			
@@ -58,7 +54,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10">
-						&copy; <?php echo date('Y') ?> Hotel Beach Hills | <a target="_blank" href="http://agenciarino.com.br/">Site desenvolvido pela Agência Rino.</a>
+						&copy; <?php echo date('Y') ?> Nobre Arte Design | <a target="_blank" href="http://agenciarino.com.br/">Site desenvolvido pela Agência Rino.</a>
 					</div>
 					<div class="col-md-2">
 						<a target="_blank" href="http://agenciarino.com.br/"><img class="img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-rino.png"?>" /></a>	

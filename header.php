@@ -25,7 +25,7 @@
 										<li class="youtube"><a target="_blank" href="#"></a></li>
 										<li class="instagram"><a target="_blank" href="#"></a></li>
 										<li class="twitter"><a target="_blank" href="#"></a></li>
-										<li class="facebook"><a target="_blank" href="#"></a></li>
+										<li class="facebook"><a target="_blank" href="https://www.facebook.com/nobreartedesign/?fref=ts"></a></li>
 									</ul>									
 								</div>	
 							</div><br>
@@ -117,7 +117,7 @@
 							</li>
 							<li class="item"><a href="<?php echo esc_url( home_url( '/' )."servicos"); ?>">SERVIÇOS</a></li>
 							<li class="item"><a href="<?php echo esc_url( home_url( '/' )."localizacao"); ?>">LOCALIZAÇÃO</a></li>
-							<li class="item"><a href="<?php echo esc_url( home_url( '/' )."blog"); ?>">BLOG</a></li>
+							<li class="item"><a target="_blank" href="<?php echo esc_url( home_url( '/' )."blog"); ?>">BLOG</a></li>
 							<li class="item"><a href="<?php echo esc_url( home_url( '/' )."contato"); ?>">CONTATO</a></li>
 						</ul>						
 					</div>

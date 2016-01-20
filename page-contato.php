@@ -8,12 +8,12 @@ get_header('sem-banner'); ?>
 				<div class="col-md-6 text-left">
 					<h4>Contato</h4>
 					<p>Envie suas dúvidas ou sugestões, responderemos em breve!</p>
-					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 6 ); } ?>
+					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 9 ); } ?>
 				</div>
 				<div class="col-md-6 text-left">
 					<p><strong>Localização</strong> </p>
 					<p>Rua São Jorge, 86 - Tatuapé, São Paulo</p>
-					<p>011 3938-0200</p>
+					<p>Telefone (11) 3938-0200</p>
 					<p>contato@nobreartedesign.com.br</p>				
 				</div>
 			</div><!-- .row -->

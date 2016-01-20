@@ -23,7 +23,7 @@ get_header(); ?>
 								<a href="<?php the_permalink(); ?>">Saiba Mais</a>
 							</article>
 						</div>
-						<?php if($wp_query->current_post == 3): ?>
+						<?php if(($wp_query->current_post+1) % 4 == 0): ?>
 							</div><br><div class="row">
 						<?php endif; ?>		
 					<?php endwhile; ?>										
