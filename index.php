@@ -23,21 +23,18 @@ get_header(); ?>
 			</div><br>
 			<div class="row">
 				<div class="col-md-4 categoria-efeito">		
-					<a href="<?php echo esc_url( home_url( '/' )."/categoria/categoria-teste"); ?>">
-						<div class="title efeitoa">POLTRONA</div>
-						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					<a href="<?php echo esc_url( home_url( '/' )."/categoria-decoracao/almofadas"); ?>">
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Banner Pequeno 01 Almofadas.jpg"; ?>"/>
 					</a>
 				</div>
 				<div class="col-md-4 categoria-efeito">		
-					<a href="<?php echo esc_url( home_url( '/' )); ?>">
-						<div class="title efeitoa">POLTRONA</div>
-						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					<a href="<?php echo esc_url( home_url( '/' )."/categoria/sofas"); ?>">
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Banner Pequeno 02 Sofa.jpg"; ?>"/>
 					</a>
 				</div>
 				<div class="col-md-4 categoria-efeito">		
-					<a href="<?php echo esc_url( home_url( '/' )); ?>">
-						<div class="title efeitoa">POLTRONA</div>
-						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					<a href="<?php echo esc_url( home_url( '/' )."/categoria/poltronas"); ?>">
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Banner Pequeno 03 Poltronas.jpg"; ?>"/>
 					</a>
 				</div>
 			</div>
@@ -71,21 +68,18 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 categoria-efeito">		
-					<a href="<?php echo esc_url( home_url( '/' )); ?>">
-						<div class="title efeitod">POLTRONA</div>
-						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					<a href="<?php echo esc_url( home_url( '/' )."/servico/reforma-de-estofados"); ?>">
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Banner Pequeno 04  Reformas.jpg"; ?>"/>
 					</a>
 				</div>
 				<div class="col-md-4 categoria-efeito">		
-					<a href="<?php echo esc_url( home_url( '/' )); ?>">
-						<div class="title efeitod">POLTRONA</div>
-						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					<a href="<?php echo esc_url( home_url( '/' )."/servico/tratamento-para-repelencia"); ?>">
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Banner Pequeno 05 Tratamentos.jpg"; ?>"/>
 					</a>
 				</div>
 				<div class="col-md-4 categoria-efeito">		
-					<a href="<?php echo esc_url( home_url( '/' )); ?>">
-						<div class="title efeitod">POLTRONA</div>
-						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/poltrona.jpg"; ?>"/>
+					<a href="<?php echo esc_url( home_url( '/' )."/servico/projetos-personalizados"); ?>">
+						<img class="img-responsive e-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Banner Pequeno 06 Sob Medida.jpg"; ?>"/>
 					</a>
 				</div>
 			</div>
