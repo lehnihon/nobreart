@@ -4,14 +4,7 @@ get_header('blog'); ?>
 <div id="content">
 	<section id="blog">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<?php putRevSlider( "banner-blog" ) ?>
-				</div>
-				<div class="col-md-4">
-					<?php putRevSlider( "publicidade1" ) ?>
-				</div>
-			</div><br><br>
+
 			<div class="row">
 				<div class="col-md-8">
 					<?php 
