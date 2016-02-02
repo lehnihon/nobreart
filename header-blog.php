@@ -8,13 +8,17 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+
+
+<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -23,7 +27,7 @@
 		<div class="back-black">
 			<div class="container">
 				<div class="row">
-					<div class="header-logo col-md-4"><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/header-logo.png"; ?>"/></a></div>
+					<div class="header-logo col-md-4"><a href="<?php echo esc_url( home_url( '/' )."blog"); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/header-logo.png"; ?>"/></a></div>
 					<div class="header-busca col-md-4 col-md-offset-4">
 						<div class="container-fluid">
 							<div class="row">
