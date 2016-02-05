@@ -46,6 +46,8 @@
 					<div class="col-md-3">
 						<strong>Receba nossas novidades</strong><br/><br/>	
 						<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 8 ); } ?>
+						<br><br><br><br>
+						<img class="img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/nobrecrea.jpg"?>" />
 					</div>
 				</div><!-- .row -->
 			</div><!-- .container -->			
