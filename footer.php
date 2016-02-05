@@ -6,7 +6,11 @@
 						<p>
 							<strong>Sobre a Arte Nobre Design.</strong><br><br>
 				A Nobre Arte Design tem como visão de futuro ser referência em qualidade e atendimento no mercado de estofados, tapeçaria e artigos para decoração e design de interiores. 
-				<br><br>Nossas atividades e serviços são baseados em valores como respeito, pontualidade, atendimento diferenciado, ética, sustentabilidade, transparência, responsabilidade e qualidade.											
+				<br><br>Nossas atividades e serviços são baseados em valores como respeito, pontualidade, atendimento diferenciado, ética, sustentabilidade, transparência, responsabilidade e qualidade.
+				<br><br>
+				<strong>Endereço</strong>
+				<br>Rua São Jorge, 86 - Tatuapé, São Paulo
+				<br><strong>Telefone</strong> 11 3938-0200											
 						</p>
 					</div>
 					<div class="col-md-2 col-md-offset-1">
