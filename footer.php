@@ -4,7 +4,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<p>
-							<strong>Sobre a Arte Nobre Design.</strong><br><br>
+							<strong>Sobre a Nobre Arte Design.</strong><br><br>
 				A Nobre Arte Design tem como visão de futuro ser referência em qualidade e atendimento no mercado de estofados, tapeçaria e artigos para decoração e design de interiores. 
 				<br><br>Nossas atividades e serviços são baseados em valores como respeito, pontualidade, atendimento diferenciado, ética, sustentabilidade, transparência, responsabilidade e qualidade.											
 						</p>
