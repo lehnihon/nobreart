@@ -8,6 +8,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<meta name="google-site-verification" content="wXM8Lq4JuSOWFN3J_DbSh7djuJL1Na04nDLxOMWm2Xc" />
 </head>
 
 <body <?php body_class(); ?>>
